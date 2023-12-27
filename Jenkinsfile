@@ -73,6 +73,7 @@ pipeline {
             }
         }      
               
+        /*     
         stage('DockerHub Login') {
             steps {
                 
@@ -87,7 +88,9 @@ pipeline {
             steps {
                 bat 'docker push berly01/java-jsp-diary'
             }
-        }             
+        }     
+        
+        */        
     }
        
     post {     
