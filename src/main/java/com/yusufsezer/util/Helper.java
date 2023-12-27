@@ -22,11 +22,11 @@ public class Helper {
 
 	public static final String VIEW_FOLDER  = "WEB-INF/view";
     public static final String NOT_FOUND = "notfound.jsp";
-    public static final String DB_SOURSE = "jdbc:mysql://localhost:3306/jspDiary?useSSL=false&serverTimezone=UTC&user=root&password=" + System.getenv("Uns@123456");
+    public static final String DB_SOURCE = "jdbc:mysql://localhost:3306/jspDiary?useSSL=false&serverTimezone=UTC&user=root&password=Uns@123456";
 
     private static IDatabase database = null;
 
-    public static void view(HttpServletRequest request, HttpServletResponse response)
+    public static void view(HttpServletRequest request, HttpServletResponse responce)
             throws ServletException, IOException {
         String viewFile = getViewFile(request);
         request
